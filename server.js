@@ -11,6 +11,7 @@ const app = express();
 
 const allowedOrigins = ['http://localhost:5000', 'http://localhost:5173'];
 
+
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
